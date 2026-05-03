@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SynGas OBD Fuel Saver | Drive Smarter, Spend Less</title>
+  <meta name="description" content="SynGas OBD Fuel Saver delivers up to 55% improved fuel efficiency. Plug and play OBD2 device with a 30-Day Money-Back Guarantee." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="navbar__brand">
+      <svg class="navbar__logo-icon icon" viewBox="0 0 24 24" stroke-width="2.2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      <span class="navbar__logo-text">Syn<em>Gas</em></span>
+    </a>
+
+    <ul class="navbar__links" id="navLinks">
+      <li><a href="#hero" class="navbar__link">Home</a></li>
+      <li><a href="#features" class="navbar__link">Features</a></li>
+      <li><a href="#reviews" class="navbar__link">Reviews</a></li>
+      <li><a href="#faq" class="navbar__link">FAQ</a></li>
+      <li><a href="#buy" class="navbar__cta">Buy SynGas</a></li>
+    </ul>
+
+    <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-glow hero-glow--green"></div>
+    <div class="hero-glow hero-glow--warm"></div>
+    <canvas id="particleCanvas"></canvas>
+
+    <div class="hero__container">
+      <!-- LEFT -->
+      <div class="hero__content">
+        <div class="hero__badge">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Fuel-Saving Technology
+        </div>
+
+        <h1 class="hero__title">Drive Smarter, <span>Spend Less</span> on Every Mile</h1>
+
+        <p class="hero__subtitle">SynGas plugs into your OBD2 port and optimizes engine efficiency automatically. No tools, no mechanic, no hassle.</p>
+
+        <ul class="hero__features">
+          <li class="hero__feature">
+            <span class="hero__feature-icon"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+            Up to 55% improved fuel efficiency
+          </li>
+          <li class="hero__feature">
+            <span class="hero__feature-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 22v-5M9 8V2M15 8V2M18 8v5a6 6 0 0 1-12 0V8z"/></svg></span>
+            Plug and play, installs in seconds
+          </li>
+          <li class="hero__feature">
+            <span class="hero__feature-icon"><svg class="icon" viewBox="0 0 24 24"><rect x="1" y="6" width="22" height="12" rx="2"/><path d="M6 12h4M14 12h4"/><circle cx="7" cy="15" r="1"/><circle cx="17" cy="15" r="1"/></svg></span>
+            Compatible with most post-1996 vehicles
+          </li>
+          <li class="hero__feature">
+            <span class="hero__feature-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            30-day money-back guarantee
+          </li>
+        </ul>
+
+        <div class="hero__cta-group">
+          <a href="#buy" class="btn btn--primary" id="cta-buy-syngas">
+            Buy SynGas Now
+            <svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Conversion triggers -->
+        <div class="hero__trust">
+          <div class="hero__trust-item">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+            <span>30-Day Money-Back</span>
+          </div>
+          <div class="hero__trust-divider"></div>
+          <div class="hero__trust-item">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>50,000+ Drivers</span>
+          </div>
+          <div class="hero__trust-divider"></div>
+          <div class="hero__trust-item">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span>4.9 / 5 Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="hero__visual">
+        <div class="hero__rings"><div class="hero__ring"></div><div class="hero__ring"></div><div class="hero__ring"></div></div>
+        <div class="hero__image-wrapper">
+          <img src="public/syngas-hero.png" alt="SynGas OBD fuel saver device plugged into car port" class="hero__product-image" loading="eager"/>
+        </div>
+        <div class="hero__float-card hero__float-card--top">
+          <div class="float-card__icon float-card__icon--green"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div>
+          <div class="float-card__info"><span class="float-card__value">55% Savings</span><span class="float-card__label">Fuel Efficiency</span></div>
+        </div>
+        <div class="hero__float-card hero__float-card--bottom">
+          <div class="float-card__icon float-card__icon--gold"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06c.46-.46.58-1.14.33-1.82a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09c.7-.05 1.29-.5 1.51-1.07a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06c.46.46 1.14.58 1.82.33.58-.27.97-.85 1.02-1.51V3a2 2 0 0 1 4 0v.09c.05.7.5 1.29 1.07 1.51a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06c-.46.46-.58 1.14-.33 1.82.27.58.85.97 1.51 1.02H21a2 2 0 0 1 0 4h-.09c-.7.05-1.29.5-1.51 1.07z"/></svg></div>
+          <div class="float-card__info"><span class="float-card__value">Plug &amp; Play</span><span class="float-card__label">No Tools Required</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECS SECTION -->
+  <section class="specs" id="features">
+    <div class="specs__container">
+
+      <!-- Section label -->
+      <div class="specs__label">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4"/><path d="M9 3h6"/><path d="M15 3h4a2 2 0 0 1 2 2v4"/><path d="M3 9v6"/><path d="M21 9v6"/><path d="M3 15v2a2 2 0 0 0 2 2h4"/><path d="M15 19h4a2 2 0 0 0 2-2v-2"/><path d="M9 21h6"/></svg>
+        Technical Specifications
+      </div>
+
+      <h2 class="specs__heading">Built for Every Road,<br/><span>Every Vehicle</span></h2>
+      <p class="specs__intro">The SynGas OBD2 device is a compact automotive module designed to improve fuel efficiency through ECU data optimization.</p>
+
+      <!-- Two-column layout -->
+      <div class="specs__grid">
+
+        <!-- LEFT: spec rows -->
+        <div class="specs__list-wrap">
+          <ul class="specs__list">
+            <li class="specs__row">
+              <span class="specs__row-icon">
+                <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </span>
+              <span class="specs__row-label">Device Type</span>
+              <span class="specs__row-value">OBD Fuel Saver Chip</span>
+            </li>
+            <li class="specs__row">
+              <span class="specs__row-icon">
+                <svg class="icon" viewBox="0 0 24 24"><rect x="1" y="6" width="22" height="12" rx="2"/><path d="M5 12h4M15 12h4"/><circle cx="6" cy="15" r="1"/><circle cx="18" cy="15" r="1"/></svg>
+              </span>
+              <span class="specs__row-label">Compatibility</span>
+              <span class="specs__row-value">All OBD2 Port Vehicles</span>
+            </li>
+            <li class="specs__row">
+              <span class="specs__row-icon">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M5 12H3a9 9 0 1 0 3-6.7"/><polyline points="3 4 3 12 11 12"/></svg>
+              </span>
+              <span class="specs__row-label">Power Source</span>
+              <span class="specs__row-value">Vehicle Battery via Port</span>
+            </li>
+            <li class="specs__row">
+              <span class="specs__row-icon">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M12 22v-5M9 8V2M15 8V2M18 8v5a6 6 0 0 1-12 0V8z"/></svg>
+              </span>
+              <span class="specs__row-label">Installation</span>
+              <span class="specs__row-value">Plug-and-Play, No Tools</span>
+            </li>
+            <li class="specs__row">
+              <span class="specs__row-icon">
+                <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </span>
+              <span class="specs__row-label">Calibration Period</span>
+              <span class="specs__row-value">Adapts Within ~150 Miles</span>
+            </li>
+            <li class="specs__row">
+              <span class="specs__row-icon">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+              </span>
+              <span class="specs__row-label">Weight</span>
+              <span class="specs__row-value">Lightweight Compact Design</span>
+            </li>
+          </ul>
+
+          <!-- Conversion trigger banner -->
+          <div class="specs__trust-banner">
+            <div class="specs__trust-icon">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <div class="specs__trust-body">
+              <strong>Universal Fit. Zero Hassle.</strong>
+              <span>Reliable compatibility with no installation stress builds instant trust.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: image placeholder -->
+        <div class="specs__image-wrap" id="specs-image-area">
+          <img src="public/technical.webp" alt="SynGas OBD2 device specifications diagram" class="specs__image" loading="lazy" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW SECTION -->
+  <section class="overview" id="learn-more">
+    <div class="overview__container">
+
+      <div class="overview__header">
+        <div class="overview__label">
+          <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          Complete Overview
+        </div>
+        <h2 class="overview__heading">What Is SynGas OBD<br/><span>Fuel Saver?</span></h2>
+        <p class="overview__subhead">Built for one purpose: reduce unnecessary fuel consumption while maintaining performance.</p>
+      </div>
+
+      <div class="overview__body">
+
+        <!-- Left: image -->
+        <div class="overview__image-wrap">
+          <img src="/public/what-is-syngas.webp" alt="What Is SynGas OBD Fuel Saver?" class="overview__image">
+        </div>
+
+        <!-- Right: description -->
+        <div class="overview__copy">
+          <p class="overview__text">Instead of changing your engine, SynGas works with your vehicle's existing system — communicating directly through the OBD2 port to optimize how your ECU manages fuel delivery. No modifications, no risk, no downtime.</p>
+          <p class="overview__text">The result is a smarter, leaner fuel cycle that delivers real savings mile after mile, without sacrificing the performance you rely on.</p>
+
+          <ul class="overview__benefits">
+            <li class="overview__benefit">
+              <span class="overview__benefit-icon">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+              </span>
+              <div class="overview__benefit-body">
+                <strong>Spend Less at the Pump</strong>
+                <span>Cut fuel bills by up to 55% based on driving patterns.</span>
+              </div>
+            </li>
+            <li class="overview__benefit">
+              <span class="overview__benefit-icon">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M5 12H3a9 9 0 1 0 3-6.7"/><polyline points="3 4 3 12 11 12"/></svg>
+              </span>
+              <div class="overview__benefit-body">
+                <strong>Drive Longer Distances</strong>
+                <span>More miles from every tank, on every route.</span>
+              </div>
+            </li>
+            <li class="overview__benefit">
+              <span class="overview__benefit-icon">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </span>
+              <div class="overview__benefit-body">
+                <strong>Reduce Engine Strain</strong>
+                <span>Optimized fuel cycles mean less wear over time.</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="overview__trigger">
+            <p>Ideal for <strong>daily commuters</strong>, <strong>families</strong>, and anyone tired of rising fuel bills.</p>
+            <a href="#buy" class="btn btn--primary" id="cta-overview-buy">
+              Get SynGas Now
+              <svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="features" id="features-detail">
+    <div class="features__container">
+
+      <div class="features__header">
+        <div class="features__label">
+          <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Key Features
+        </div>
+        <h2 class="features__heading">Everything You Need.<br/><span>Nothing You Don't.</span></h2>
+        <p class="features__subhead">Effortless solution delivering long-term savings — no maintenance, no tools, no compromise.</p>
+      </div>
+
+      <!-- 3-column: cards | image | cards -->
+      <div class="features__grid">
+
+        <!-- Left column: 3 feature cards -->
+        <div class="features__col features__col--left">
+          <div class="feat-card feat-card--right">
+            <div class="feat-card__body">
+              <strong>Intelligent Fuel Optimization</strong>
+              <span>Learns your driving habits and adjusts performance accordingly.</span>
+            </div>
+            <div class="feat-card__icon">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </div>
+          </div>
+          <div class="feat-card feat-card--right">
+            <div class="feat-card__body">
+              <strong>Plug &amp; Play Setup</strong>
+              <span>No wiring, no tools. Install in seconds and drive.</span>
+            </div>
+            <div class="feat-card__icon">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M12 22v-5M9 8V2M15 8V2M18 8v5a6 6 0 0 1-12 0V8z"/></svg>
+            </div>
+          </div>
+          <div class="feat-card feat-card--right">
+            <div class="feat-card__body">
+              <strong>Broad Compatibility</strong>
+              <span>Works with most cars using OBD2 systems.</span>
+            </div>
+            <div class="feat-card__icon">
+              <svg class="icon" viewBox="0 0 24 24"><rect x="1" y="6" width="22" height="12" rx="2"/><path d="M5 12h4M15 12h4"/><circle cx="6" cy="15" r="1"/><circle cx="18" cy="15" r="1"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Centre: image -->
+        <div class="features__centre">
+          <div class="features__image-wrap">
+            <div class="features__image-placeholder">
+              <svg class="icon features__placeholder-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <p>SynGas features infographic</p>
+              <span>Replace with your image</span>
+            </div>
+          </div>
+          <!-- Conversion trigger below image -->
+          <div class="features__trigger">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+            <span>Effortless solution + long-term savings. Zero ongoing effort required.</span>
+          </div>
+        </div>
+
+        <!-- Right column: 2 feature cards + CTA -->
+        <div class="features__col features__col--right">
+          <div class="feat-card feat-card--left">
+            <div class="feat-card__icon">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M5 12H3a9 9 0 1 0 3-6.7"/><polyline points="3 4 3 12 11 12"/></svg>
+            </div>
+            <div class="feat-card__body">
+              <strong>Maintenance-Free</strong>
+              <span>Once installed, it runs automatically. No check-ins needed.</span>
+            </div>
+          </div>
+          <div class="feat-card feat-card--left">
+            <div class="feat-card__icon">
+              <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/></svg>
+            </div>
+            <div class="feat-card__body">
+              <strong>Compact &amp; Discreet</strong>
+              <span>No visible clutter inside your vehicle. Clean and subtle.</span>
+            </div>
+          </div>
+          <a href="#buy" class="btn btn--primary features__cta" id="cta-features-buy">
+            Get SynGas Now
+            <svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ECO SECTION -->
+  <section class="eco" id="eco-impact">
+    <div class="eco__container">
+
+      <!-- Centred header -->
+      <div class="eco__header">
+        <div class="eco__label">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><path d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+          Eco-Friendly Impact
+        </div>
+        <h2 class="eco__heading">Drive Smarter,<br/><span>Reduce Your Footprint</span></h2>
+      </div>
+
+      <!-- Two-column intro text -->
+      <div class="eco__intro">
+        <p>Fuel efficiency isn't just about saving money — it's also about reducing unnecessary emissions produced during everyday driving. By optimizing how fuel is consumed, SynGas helps your engine operate more efficiently, which may contribute to lower carbon output over time.</p>
+        <p>Instead of wasting fuel through inefficient combustion patterns, SynGas supports a more balanced engine performance, meaning fewer emissions per mile and a cleaner driving footprint — without changing your vehicle.</p>
+      </div>
+
+      <!-- 5-item icon grid -->
+      <ul class="eco__grid">
+        <li class="eco__item">
+          <span class="eco__item-icon">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          </span>
+          <span>Reduces excess fuel consumption during inefficient driving cycles</span>
+        </li>
+        <li class="eco__item">
+          <span class="eco__item-icon">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/></svg>
+          </span>
+          <span>Supports lower carbon emissions over time</span>
+        </li>
+        <li class="eco__item">
+          <span class="eco__item-icon">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </span>
+          <span>Helps minimize engine strain and fuel waste</span>
+        </li>
+        <li class="eco__item">
+          <span class="eco__item-icon">
+            <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </span>
+          <span>Promotes more sustainable daily driving habits</span>
+        </li>
+        <li class="eco__item eco__item--wide">
+          <span class="eco__item-icon">
+            <svg class="icon" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </span>
+          <span>No chemicals, no additives — purely electronic optimization</span>
+        </li>
+      </ul>
+
+      <!-- Conversion trigger banner -->
+      <div class="eco__trigger">
+        <div class="eco__trigger-left">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/></svg>
+          <div>
+            <strong>Save Money + Support a Cleaner Drive</strong>
+            <span>Every optimized mile is a step toward both a lighter wallet impact and a lighter environmental impact.</span>
+          </div>
+        </div>
+        <a href="#buy" class="btn btn--primary" id="cta-eco-buy">
+          Get SynGas Now
+          <svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BUILD QUALITY SECTION -->
+  <section class="bq" id="build-quality">
+    <div class="bq__container">
+
+      <!-- Section label + heading -->
+      <div class="bq__header">
+        <div class="bq__label">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Build Quality
+        </div>
+        <h2 class="bq__heading">Engineering You<br/><span>Can Count On</span></h2>
+        <p class="bq__subhead">Designed with durability and efficiency in mind. Built to function continuously without overheating or performance drops.</p>
+      </div>
+
+      <!-- Bento grid -->
+      <div class="bq__bento">
+
+        <!-- Image cell — tall, spans 2 rows -->
+        <div class="bq__cell bq__cell--image">
+          <div class="bq__image-placeholder">
+            <svg class="icon bq__placeholder-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <p>SynGas device internal chip</p>
+            <span>Add build quality image here</span>
+          </div>
+        </div>
+
+        <!-- Quality card 1 -->
+        <div class="bq__cell bq__cell--card">
+          <div class="bq__card-icon">
+            <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <strong>High-Quality Chip Module</strong>
+          <span>Premium electronic components rated for sustained automotive use.</span>
+        </div>
+
+        <!-- Quality card 2 -->
+        <div class="bq__cell bq__cell--card">
+          <div class="bq__card-icon">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <strong>Heat-Resistant Casing</strong>
+          <span>Outer shell engineered to withstand the heat of an active engine bay.</span>
+        </div>
+
+        <!-- Quality card 3 -->
+        <div class="bq__cell bq__cell--card">
+          <div class="bq__card-icon">
+            <svg class="icon" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <strong>Stable Power System</strong>
+          <span>Consistent draw from the OBD2 port — no surges, no interference.</span>
+        </div>
+
+        <!-- Quality card 4 -->
+        <div class="bq__cell bq__cell--card">
+          <div class="bq__card-icon">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <strong>Compact &amp; Travel-Friendly</strong>
+          <span>Small enough to forget it's there — works across every journey.</span>
+        </div>
+
+        <!-- Conversion trigger — spans full bottom row -->
+        <div class="bq__cell bq__cell--trigger">
+          <div class="bq__trigger-inner">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+            <div>
+              <strong>Durable Design = Long-Term Value</strong>
+              <span>One device, no ongoing costs, no replacements — just reliable savings every mile.</span>
+            </div>
+          </div>
+          <a href="#buy" class="btn btn--primary" id="cta-bq-buy">
+            Get SynGas Now
+            <svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
