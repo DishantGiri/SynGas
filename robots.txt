@@ -1,0 +1,6 @@
+# User-agent configuration for syngasofficial.com
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.syngasofficial.com/sitemap.xml

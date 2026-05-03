@@ -1,0 +1,134 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.syngasofficial.com/#organization",
+      "name": "syngasofficial.com®",
+      "url": "https://www.syngasofficial.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.syngasofficial.com/public/syngas_hero_product.webp"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-256-448-8596",
+        "contactType": "customer service",
+        "email": "support@syngasofficial.com",
+        "areaServed": "Worldwide",
+        "availableLanguage": "English"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Unit 1603, 16th Floor, The L. Plaza, 367 - 375 Queen’s Road Central",
+        "addressLocality": "Sheung Wan",
+        "addressRegion": "Hong Kong",
+        "addressCountry": "HK"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.syngasofficial.com/#website",
+      "url": "https://www.syngasofficial.com",
+      "name": "SynGas OBD Fuel Saver | Official Site",
+      "publisher": { "@id": "https://www.syngasofficial.com/#organization" }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.syngasofficial.com/#product",
+      "name": "SynGas OBD Fuel Saver",
+      "image": [
+        "https://www.syngasofficial.com/public/syngas_hero_product.webp",
+        "https://www.syngasofficial.com/public/bundle_1x.webp",
+        "https://www.syngasofficial.com/public/bundle_3x.webp"
+      ],
+      "description": "SynGas is a plug-and-play OBD2 device designed to optimize vehicle fuel efficiency by analyzing driving patterns and adjusting engine data in real-time.",
+      "brand": {
+        "@type": "Brand",
+        "name": "SynGas"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "url": "https://www.syngasofficial.com/#buy",
+        "priceCurrency": "USD",
+        "lowPrice": "24.85",
+        "highPrice": "39.99",
+        "offerCount": "4",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "1250",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Mark D." },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "reviewBody": "My fuel expenses dropped within weeks. I was skeptical at first, but the data doesn't lie."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Sarah L." },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "reviewBody": "Easy to install and surprisingly effective. My car feels smoother and the savings are real."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "James T." },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "reviewBody": "Perfect for long commutes. I drive over 60 miles a day and SynGas has paid for itself twice over."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.syngasofficial.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is it compatible with all cars?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It works with most vehicles equipped with an OBD2 port, typically cars manufactured after 1996."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is installation difficult?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Simply plug the device into the OBD2 port, no tools or technical knowledge required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will it damage my engine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The device is designed to work within your vehicle’s system without altering core components."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long before I see results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most users notice changes after the device adapts over approximately 100–150 miles."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is SynGas device legit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SynGas is designed as a plug-and-play OBD2 device that works within your car’s system. Results vary, but many users report gradual fuel efficiency improvements."
+          }
+        }
+      ]
+    }
+  ]
+}
