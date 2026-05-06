@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.getElementById('navLinks');
   if (navToggle && navLinks) {
     navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
       navLinks.classList.toggle('open');
     });
   }
