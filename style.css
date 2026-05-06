@@ -4869,7 +4869,7 @@ body {
    SUSTAINABILITY SECTION
    ══════════════════════════════════ */
 .sustainability {
-  padding: 120px 0;
+  padding: 80px var(--px);
   background: radial-gradient(circle at 10% 10%, rgba(0,200,83,0.03) 0%, transparent 40%),
               radial-gradient(circle at 90% 90%, rgba(255,160,0,0.02) 0%, transparent 40%),
               var(--bg-main);
@@ -4879,20 +4879,20 @@ body {
 }
 
 .sustainability__container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 80px;
   align-items: center;
-  text-align: center;
 }
 
 .sustainability__content {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  align-items: center;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .sustainability__label {
@@ -4942,9 +4942,8 @@ body {
   gap: 16px;
   list-style: none;
   padding: 0;
-  margin: 20px auto 0;
+  margin: 8px 0 0;
   text-align: left;
-  max-width: 400px;
 }
 
 .sustainability__list li {
@@ -4967,16 +4966,17 @@ body {
 /* Visual Column */
 .sustainability__visual {
   width: 100%;
+  max-width: 520px;
 }
 
 .sustainability__visual-card {
   position: relative;
-  border-radius: 32px;
+  border-radius: 24px;
   overflow: hidden;
   border: 1px solid var(--border);
-  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
   background: var(--bg-card);
-  min-height: 300px;
+  aspect-ratio: 4 / 3;
 }
 
 .sustainability__image-placeholder {
@@ -4995,11 +4995,10 @@ body {
 
 .sustainability__img {
   width: 100%;
-  max-width: 650px;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  margin: 0 auto;
-  border-radius: 24px;
+  border-radius: 0;
 }
 
 .sustainability__badge {
@@ -5021,8 +5020,8 @@ body {
 }
 
 @media (max-width: 960px) {
-  .sustainability__container { grid-template-columns: 1fr; text-align: center; gap: 80px; }
-  .sustainability__content { align-items: center; }
+  .sustainability__container { grid-template-columns: 1fr; gap: 48px; text-align: center; }
+  .sustainability__content { align-items: center; text-align: center; }
   .sustainability__list li { justify-content: center; }
   .sustainability__visual { max-width: 700px; margin: 0 auto; }
 }
