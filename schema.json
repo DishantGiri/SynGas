@@ -67,19 +67,31 @@
       "review": [
         {
           "@type": "Review",
-          "author": { "@type": "Person", "name": "Mark D." },
+          "author": { 
+            "@type": "Person", 
+            "name": "Mark D.",
+            "image": "https://www.syngasofficial.com/public/review_mark_d.png"
+          },
           "reviewRating": { "@type": "Rating", "ratingValue": "5" },
           "reviewBody": "My fuel expenses dropped within weeks. I was skeptical at first, but the data doesn't lie."
         },
         {
           "@type": "Review",
-          "author": { "@type": "Person", "name": "Sarah L." },
+          "author": { 
+            "@type": "Person", 
+            "name": "Sarah L.",
+            "image": "https://www.syngasofficial.com/public/review_sarah_l.webp"
+          },
           "reviewRating": { "@type": "Rating", "ratingValue": "5" },
           "reviewBody": "Easy to install and surprisingly effective. My car feels smoother and the savings are real."
         },
         {
           "@type": "Review",
-          "author": { "@type": "Person", "name": "James T." },
+          "author": { 
+            "@type": "Person", 
+            "name": "James T.",
+            "image": "https://www.syngasofficial.com/public/review_james_t.webp"
+          },
           "reviewRating": { "@type": "Rating", "ratingValue": "5" },
           "reviewBody": "Perfect for long commutes. I drive over 60 miles a day and SynGas has paid for itself twice over."
         }
@@ -128,6 +140,18 @@
             "@type": "Answer",
             "text": "SynGas is designed as a plug-and-play OBD2 device that works within your car’s system. Results vary, but many users report gradual fuel efficiency improvements."
           }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.syngasofficial.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.syngasofficial.com/"
         }
       ]
     }
